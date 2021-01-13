@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<h1 id="reifon-philip-chiu">Reifon Philip Chiu</h1>
+<h2 id="i-play-games-solve-puzzles-write-code-and-listen-to-music">I play games, solve puzzles, write code, and listen to music.</h2>
+
+<h3 id="heres-a-small-list-of-achievements-that-im-proud-of">Here’s a (small) list of achievements that I’m proud of:</h3>
+<ol>
+  <li>Runner-up winner of .tech Domain’s Break The Code (2020) Voynich room (Oculus Quest 2, 256 gb)</li>
+  <li>Winner of the 2020 PennApps Melee tournament</li>
+  <li>Wrote my first functional Discord Bot, “DotaBot” (Dec 2020)</li>
+</ol>
+
+{% assign contentwonl = content | strip_newlines %} {% unless contentwonl == ""  %} <br /> {% endunless %} <!-- add line break if there is any content -->
+
+Recent Posts <br>
+------------
+{%- if site.posts.size > 0 -%}
+  <ul>
+    {%- for post in site.posts -%}
+    <li>
+      {%- assign date_format = "%Y-%m-%d" -%}
+      [ {{ post.date | date: date_format }} ] <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+    </li>
+    {%- endfor -%}
+  </ul>
+{%- endif -%}
+
+{{ content }}
