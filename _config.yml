@@ -13,11 +13,9 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "nofear"
-email: "philipch07@gmail.com"
-description: "Reifon Philip Chiu"
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://philipch07.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+title: ""
+description: "My personal website where I write about games and music. I occasionally blog a bit."
+url: "https://reifon.info" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ""
 github_username: philipch07
 
@@ -43,7 +41,7 @@ footer: 'check out my trash code on <a href="https://github.com/philipch07/">git
 
 # Build settings
 markdown: kramdown
-# theme: jekyll-theme-console
+# theme: jekyll-theme-console // i customized this
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
